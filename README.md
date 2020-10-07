@@ -44,6 +44,24 @@ cat purchases.txt | python 21mapper.py | sort  | python 22reducer.py
 
 ```
 
+## Bonus
+- Created BonusInput.txt file as input for Bonusmapper using the below command:
+`cat purchases.txt | python 21mapper.py | sort | python 22reducer.py > BonusInput.txt`
+- The command I have used for sorting out is: `cat BonusInput.txt | python Bonusmapper.py | sort -rg | python Bonusreducer.py`
+- So the first five stores after sorting in descending order are:<br>
+```
+Chandler        4125.46
+
+Scottsdale      4034.65
+
+Santa Ana       3623.07
+
+Lubbock 3493.38
+
+Boston  3482.2099999999996
+```
+
+
 ## References
 
 - [https://github.com/denisecase/python-map-reduce](https://github.com/denisecase/python-map-reduce)
